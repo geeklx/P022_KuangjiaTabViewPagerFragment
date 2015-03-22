@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/menu"
+        layout="@layout/title_bar_education_menu" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#555555"
+        android:fadingEdge="@null"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#33b5e5" >
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="49dp"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/btn1"
+                    style="@style/radioButton"
+                    android:text="考研" />
+
+                <RadioButton
+                    android:id="@+id/btn2"
+                    style="@style/radioButton"
+                    android:text="专升本" />
+
+                <RadioButton
+                    android:id="@+id/btn3"
+                    style="@style/radioButton"
+                    android:text="公务员" />
+
+                <RadioButton
+                    android:id="@+id/btn4"
+                    style="@style/radioButton"
+                    android:text="招警" />
+
+                <RadioButton
+                    android:id="@+id/btn5"
+                    style="@style/radioButton"
+                    android:text="出国留学" />
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="100dp"
+                android:layout_height="4dp"
+                android:layout_alignParentBottom="true"
+                android:background="#33b5e5" />
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

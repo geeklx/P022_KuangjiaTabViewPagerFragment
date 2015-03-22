@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dip"
+    android:layout_height="fill_parent"
+    android:background="#b0000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/leftmenu_item03Layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_title_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/title_logo"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="120dip"
+        android:layout_height="2.0dip"
+        android:background="@drawable/ic_shelf_category_divider" />
+
+    <TextView
+        android:layout_width="120dip"
+        android:layout_height="50.0dip"
+        android:clickable="true"
+        android:drawableLeft="@drawable/browser_logo"
+        android:drawablePadding="1.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="公共服务"
+        android:textColor="#ffffff"
+        android:textSize="16.0sp" />
+
+    <View
+        android:layout_width="120dip"
+        android:layout_height="2.0dip"
+        android:background="@drawable/ic_shelf_category_divider" />
+
+    <TextView
+        android:layout_width="120dip"
+        android:layout_height="50.0dip"
+        android:clickable="true"
+        android:drawableLeft="@drawable/doghouse_logo"
+        android:drawablePadding="1.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="校外服务"
+        android:textColor="#ffffff"
+        android:textSize="16.0sp" />
+
+    <View
+        android:layout_width="120dip"
+        android:layout_height="2.0dip"
+        android:background="@drawable/ic_shelf_category_divider" />
+
+</LinearLayout>

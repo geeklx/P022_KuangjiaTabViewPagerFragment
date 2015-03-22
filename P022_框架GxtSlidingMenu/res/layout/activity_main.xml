@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.gaoxiaotong.SlideMenu
+        android:id="@+id/slide_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <include layout="@layout/layout_menu" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/color_5"
+            android:orientation="vertical" >
+
+            <include layout="@layout/layout_title_bar" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/gaoxiao_tong_one"
+                android:translationY="60dip" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="290dp"
+                android:background="@drawable/gaoxiao_tong_two"
+                android:translationY="180dip" />
+        </RelativeLayout>
+        <include layout="@layout/layout_menu_right_hehe" />
+    </com.gaoxiaotong.SlideMenu>
+
+    
+</RelativeLayout>
